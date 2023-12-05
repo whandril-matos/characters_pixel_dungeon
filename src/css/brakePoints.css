@@ -1,0 +1,36 @@
+    @media (max-width: 550px)  {
+        .navList{
+            
+            margin-left: 60vh;
+            padding: 8px;
+            position: absolute;
+            top: 19vw;
+            right:0;
+            border-radius: 4px;
+            width: 150px;
+            background:rgb(39, 35, 48);
+            border: 5px solid rgb(103, 92, 128) ;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            transform: translateX(150%);
+        }
+        body {
+            overflow-x: hidden;
+        }
+        .mobileMenu{
+            display: block;
+        }
+        
+    }
+    @media (max-height:550px) and (max-width: 550px){
+        .navList{
+            width:220px;
+        }
+
+
+    }
+
+.navList .aTC {
+    transform: translateX(0);
+}
