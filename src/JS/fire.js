@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     let randomMoveV =  randomMoveF(0,3)
 
                     let resistensce = logGado[i][j-1] 
-                    console.log(randomMoveV)
+                    
                     a = i - 1
                     b = j - 1
                     c = resistensce  - randomMoveV
