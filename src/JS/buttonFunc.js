@@ -9,9 +9,20 @@ document.addEventListener("DOMContentLoaded", function () {
             
             this.handlerClick = this.handlerClick.bind(this)
         }
+        animateLinks(){
+            this.navLinks.forEach((link, index) => {
+                console.log();
+                link.style.animation
+                ? (link.style.animation = "")
+                : (link.style.animation = `navLinkFade 0.5s ease forwards ${
+                    index / 7 + 0.3
+                }s`);
+            });
+        }
         handlerClick(){
-            console.log(this)
             this.navList.classList.toggle(this.activeClass)
+            this.mobileMenu.classList.toggle(this.activeClass);
+            this.animateLinks()
         }
         addClickEvent(){
             this.mobileMenu.addEventListener("click", this.handlerClick)
