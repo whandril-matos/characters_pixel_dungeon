@@ -5,10 +5,16 @@ document.addEventListener("DOMContentLoaded", function () {
             this.mobileMenu = document.querySelector(mobileMenu);
             this.navList = document.querySelector(navList);
             this.navLinks = document.querySelectorAll(navLinks);
-            this.activeClass = "active";
+            this.activeClass = "aTC";
+            
+            this.handlerClick = this.handlerClick.bind(this)
+        }
+        handlerClick(){
+            console.log(this)
+            this.navList.classList.toggle(this.activeClass)
         }
         addClickEvent(){
-            this.mobileMenu.addEventListener("click", () => console.log("foi"))
+            this.mobileMenu.addEventListener("click", this.handlerClick)
     
         }
     
