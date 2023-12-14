@@ -14,7 +14,6 @@
             flex-wrap: wrap;
             align-items: center;
             transition: transform 0.3s ease-out;
-            z-index: +2;
         }
         .navList li{
             opacity: 0;
@@ -45,7 +44,7 @@
         .navList{
             width:220px;
         }
-
-
     }
+
+   
 

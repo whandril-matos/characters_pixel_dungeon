@@ -152,7 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
         
         var larguraDaTela =  window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         var alturaDaTela =  window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-        
+        // if (larguraDaTela < 400){
+        //     larguraDaTela = 400
+        // }
+        // if (alturaDaTela < 400){
+        //     larguraDaTela = 400
+        // }
         const percentualPixel = 0.07
         let fireHeight = Math.floor(alturaDaTela * percentualPixel)
         let fireWidth = Math.floor( larguraDaTela * percentualPixel)

@@ -11,12 +11,14 @@ a {
     border-radius: 10px;
     position: fixed;
     width: calc(95% - 20px) ;
+    z-index: 100;
     
 }
 
 body {
     background-color: #000000;
     z-index: -1;
+    
 }
 .nav {
     max-width: 1280px;
@@ -57,7 +59,9 @@ table{
 }
 .minhaTabela {
     width:inherit;
-    height:inherit;  
+    height:inherit; 
+    top: 0%;
+
 }
 tr td {
     border: 1px solid rgba(255, 0, 0, 0);
@@ -65,16 +69,19 @@ tr td {
     text-align: center;
 }
 .fireContent {
-    width: 100% ;
-    height: 100vh;
-      
+    width: 100vw;
+	height: 100vh;
+    position:absolute;
+    
+    
+    
 }
 .maps{
     display: none;
     width: 200px;
     height: 200px;
     top: 50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
     position:fixed;
     background-size:contain;
@@ -102,29 +109,82 @@ tr td {
 }
 
 .paperRoll{
-    margin: 40px;
-    height:40%;
+
     display: flex;
     position:absolute;
-    background: rgb(189, 130, 238);
-    padding: 5px  ;  
-    margin: 150px 10px 10px 10px;
+    background-color:antiquewhite;
     border-radius: 10px;
-    width: calc(95% - 20px) ;
+    width: calc(100% - 30px) ;
+    left: 50%; 
+    transform: translate(-50%, 0%);
+    height: calc(100% - 30px);
+    border: solid rgb(172, 150, 120) 10px;
+    border-radius: 3px;
     
 }
 
-.row{
-    /* background-color: antiquewhite;
-    width: 900px;
-    border: solid rgb(212, 198, 179) 10px;
-    position: relative;
-     */
-    width: 300px;
-    height: 300px;
-    background-color: rgb(65, 166, 199);
+.up{
     position: absolute;
+    border: solid rgb(172, 150, 120) 10px;
+    width: 100%;
+    height: 10%;
+    background-color:antiquewhite;  
+    top: 0%; 
+    left: 50%; 
+    transform: translate(-50%, 0%);
+    border-radius: 3px;
+    
+}
+
+.low{
+    position:absolute;
+    border: solid rgb(172, 150, 120) 10px;
+    width: 100%;
+    height: 10%;
+    background-color:rgb(250, 235, 215);  
+    top: 100%; 
+    left: 50%; 
+    transform: translate(-50%, -30%);
+    border-radius: 3px;
+}
+
+
+
+
+.form{
+    background: rgba(0, 0, 255, 0);
+    width:70%;
+    height: 50%;
+   
+    display:flex;
+    position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 1px;
+    z-index: 1;
+
+}
+
+.pipe{
+    position:absolute;
+    border: solid rgb(125, 73, 0) 10px;
+    width: 110%;
+    height: 3%;
+    background-color:rgb(70, 48, 17);  
+    border-radius: 3px;
+    z-index: -5;
+}
+
+.u{
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, 0%)
+
+}
+
+.l{
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, 0%)
 }
