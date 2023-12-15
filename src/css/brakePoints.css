@@ -1,50 +1,69 @@
-    @media (max-width: 550px)  {
-        .navList{
-            transform: translateX(150%);
-            margin-left: 60vh;
-            padding: 8px;
-            position: absolute;
-            top: 90px;
-            right:0;
-            border-radius: 4px;
-            width: 150px;
-            background:rgb(39, 35, 48);
-            border: 5px solid rgb(103, 92, 128) ;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            transition: transform 0.3s ease-out;
-        }
-        .navList li{
-            opacity: 0;
-        }
-        .navList.aTC {
-            
-            transform: translateX(0);
-        }
-        body {
-            overflow-x: hidden;
-        }
-        .mobileMenu{
-            display: block;
-        }
+@media (max-width: 550px)  {
+    .navList{
+        transform: translateY(-160%);
+        margin-left: 60vh;
+        padding: 8px;
+        position: absolute;
+        top: 0px;
+        right:80px;
+        border-radius: 4px;
+        width: 220px;
+        background:rgb(39, 35, 48);
+        border: 5px solid rgb(103, 92, 128) ;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: transform 0.3s ease-out;
+    }
+    .navList li{
+        opacity: 0;
+    }
+    .navList.aTC {
         
+        transform: translateX(0);
+    }
+    body {
+        overflow-x: hidden;
+    }
+    .mobileMenu{
+        display: block;
+        width: 45px;
+        height: 47px;
+    }
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;            
+        transform: translateY(-50px);
+    }to {
+        opacity:1;
+        transform: translateY(0%);
+    }
+}
+@media (max-height:550px){
+    .form{
+        top:60%;
+        min-width: 400px;  
     }
 
-    @keyframes navLinkFade{
-        from{
-            opacity: 0;            
-            transform: translatex(50px);
-        }to {
-            opacity:1;
-            transform: translatex(0%);
-        }
-    }
-    @media (max-height:550px) and (max-width: 550px){
-        .navList{
-            width:220px;
-        }
-    }
+}
 
-   
+.mobileMenu.aTC .line1{
+    transform: rotate(-45deg) translate(-16px, 5px);
+    width: 60px;
+
+}
+.mobileMenu.aTC .line2{
+    display: none;
+
+}
+.mobileMenu.aTC .line3{
+    transform: rotate(45deg) translate(-6px, 5px);
+    width: 60px;
+
+}
+
+
 
