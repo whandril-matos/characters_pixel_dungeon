@@ -188,3 +188,28 @@ tr td {
     left: 50%;
     transform: translate(-50%, 0%)
 }
+
+.rowText{
+    background:#76f6ff;
+    width:50%;
+    height: 100%;
+
+}
+.rowImg{
+    background:#ff7676;
+    width:50%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    
+    
+}
+
+.fullBody{
+    height:200%;
+    position: relative;
+    left: -100%;
+    top: 4%;
+    transform: translate(5%, 0%)
+    
+}
