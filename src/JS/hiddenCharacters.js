@@ -17,11 +17,14 @@ document.addEventListener("DOMContentLoaded", function (){
             this.rogue = document.getElementById("rogueBT"),
             this.huntress = document.getElementById("huntressBT"),
             this.duelist = document.getElementById("duelsitBT")
+            this.iMGS = document.getElementById("fullBody")
+
+            this.hero = [this.warrior, this.mage, this.rogue, this.huntress, this.duelist]
         }
     
-        addClickEvent(){
-            this.mobileMenu.addEventListener("click", this.handlerClick)
+        clcikOn(idOn){
 
+            
         }
     
         // Método da classe
