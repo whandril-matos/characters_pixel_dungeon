@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function (){
     const getCharacter = [
-        document.getElementById("warriorBT"),
-        document.getElementById("mageBT"),
-        document.getElementById("rogueBT"),
-        document.getElementById("huntressBT"),
-        document.getElementById("duelsitBT"),
+        this.bT = document.getElementsByClassName("logo hero navLinkFade")
     ]
     
     console.log(getCharacter[0])
@@ -12,14 +8,8 @@ document.addEventListener("DOMContentLoaded", function (){
     class Pessoa {
         // Construtor para inicializar instâncias da classe
         constructor() {
-            this.warrior = document.getElementById("warriorBT"),
-            this.mage = document.getElementById("mageBT"),
-            this.rogue = document.getElementById("rogueBT"),
-            this.huntress = document.getElementById("huntressBT"),
-            this.duelist = document.getElementById("duelsitBT")
-            this.iMGS = document.getElementById("fullBody")
-
-            this.hero = [this.warrior, this.mage, this.rogue, this.huntress, this.duelist]
+            this.warrior = document.getElementById("bT")
+            
         }
     
         clcikOn(idOn){
