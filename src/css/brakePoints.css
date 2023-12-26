@@ -9,10 +9,9 @@
         border-radius: 4px;
         width: 220px;
         background:rgb(39, 35, 48);
-        border: 5px solid rgb(103, 92, 128) ;
+        border: 5px solid rgb(103, 92, 128);
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
         transition: transform 0.3s ease-out;
     }
     .navList li{

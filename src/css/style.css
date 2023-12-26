@@ -35,7 +35,7 @@ body {
     font-size: 30px;
     width: 70px;
     height: 70px;
-
+  
 }
 
 .navList {
@@ -49,10 +49,7 @@ body {
     padding-block:20px;
 }
 
-.hero {
-    height:  calc(100vh -70px);
-    background-color: center / cover ;
-}
+
 table{
     top: 50vh;
     height: 50vh;
@@ -210,6 +207,9 @@ tr td {
 
 .fullBody{
     height:200%;
+    display: none;
+}
+.onIndex{
     
-    
+    display: flex;
 }

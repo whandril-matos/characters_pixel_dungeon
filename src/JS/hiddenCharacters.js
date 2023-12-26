@@ -1,33 +1,31 @@
 document.addEventListener("DOMContentLoaded", function (){
-    const getCharacter = [
-        this.bT = document.getElementsByClassName("logo hero navLinkFade")
-    ]
-    
-    console.log(getCharacter[0])
-    // Definindo uma classe chamada Pessoa
+    // define a class 
     class Pessoa {
-        // Construtor para inicializar instâncias da classe
+        // Construtor to start the instance 
         constructor() {
-            this.warrior = document.getElementById("bT")
-            
+            this.bT = document.querySelectorAll(".navLinkFade")
+            this.bD = document.getElementsByClassName("fullBody")
         }
     
-        clcikOn(idOn){
-
-            
-        }
-    
-        // Método da classe
-        apresentar() {
-        console.log(`Olá, meu nome é ${this.nome} e tenho ${this.idade} anos.`);
-        }
+        adicionarOuvintes() {
+            this.bT.forEach((imagem, indice) => {
+              imagem.addEventListener('click', () => {
+                this.lidarCliqueNaImagem(indice);
+              });
+            });
+          }
+        
+          lidarCliqueNaImagem(indice) {
+            alert('Clicou na imagem com índice ' + indice);
+            // Adicione aqui o código que deseja executar quando uma imagem for clicada
+          }
     }
   
-    // Criando uma instância da classe Pessoa
-    const pessoa1 = new Pessoa('João', 30);
+    //Creates an instance of the class
+    const pessoa1 = new Pessoa();
   
-    // Chamando o método da classe
-    pessoa1.apresentar(); // Saída: Olá, meu nome é João e tenho 30 anos.
+    // Call the method of the class 
+    pessoa1.adicionarOuvintes(); 
 
 
 })
