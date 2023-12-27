@@ -1,24 +1,31 @@
 document.addEventListener("DOMContentLoaded", function (){
     // define a class 
     class Pessoa {
-        // Construtor to start the instance 
-        constructor() {
-            this.bT = document.querySelectorAll(".navLinkFade")
-            this.bD = document.getElementsByClassName("fullBody")
+       // Construtor to start the instance 
+      constructor() {
+          this.bT = document.querySelectorAll(".navLinkFade")
+          this.bD = document.querySelectorAll(".fullBody")
         }
     
         adicionarOuvintes() {
-            this.bT.forEach((imagem, indice) => {
-              imagem.addEventListener('click', () => {
-                this.lidarCliqueNaImagem(indice);
-              });
+          this.bT.forEach((imagem, indice) => {
+            imagem.addEventListener('click', () => {
+              this.bodyInIdex(indice);
+              this.ImgCop(indice);
+
             });
-          }
+          });
+        }
         
-          lidarCliqueNaImagem(indice) {
-            alert('Clicou na imagem com índice ' + indice);
-            // Adicione aqui o código que deseja executar quando uma imagem for clicada
-          }
+        ImgCop(indice){
+          this.bD[indice].classList.add("onIndex")
+
+        }
+
+        bodyInIdex(indice) {
+          this.onIndex = document.querySelector('.onIndex');
+          this.onIndex.classList.remove('onIndex');
+        }
     }
   
     //Creates an instance of the class

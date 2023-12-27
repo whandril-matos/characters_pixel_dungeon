@@ -112,11 +112,12 @@ tr td {
     background-color:antiquewhite;
     border-radius: 10px;
     width: calc(100% - 30px) ;
-    left: 50%; 
-    transform: translate(-50%, 0%);
+    left: 120%; 
+    transform: translate(-120%, 0%);
     height: 100%;
     border: solid rgb(172, 150, 120) 10px;
     border-radius: 3px;
+    overflow: hidden;
     
 }
 
@@ -139,7 +140,7 @@ tr td {
     width: 100%;
     height: 10%;
     background-color:rgb(250, 235, 215);  
-    top: 100%; 
+    top: 98%; 
     left: 50%; 
     transform: translate(-50%, -30%);
     border-radius: 3px;
@@ -187,29 +188,44 @@ tr td {
 }
 
 .rowText{
-    background:#76f6ff;
+    
     width:60%;
     height: 100%;
-
+    background: linear-gradient(to left, rgba(250, 235, 215, 0), rgb(250, 235, 215)50px, rgb(250, 235, 215));
+    z-index: 1;
 }
 .rowImg{
-    background:#ff7676;
+    background:#ff767600;
     width:40%;
     height: 100%;
-    /* overflow: hidden; */
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    
-    
+  
 }
 
 .fullBody{
     height:200%;
     display: none;
+    object-fit: cover;
+    
+    
+
 }
 .onIndex{
-    
     display: flex;
+    opacity: 1;
+    animation: fadeIn 3s ease-in-out ;
+    
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;            
+        
+    }to {
+        opacity:1;
+        
+    }
 }
