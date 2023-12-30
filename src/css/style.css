@@ -229,3 +229,13 @@ tr td {
         
     }
 }
+
+#particles-bg{
+    background: rgba(255, 0, 0, 0.144);
+    z-index: 1000;
+    position:absolute;
+    overflow: hidden;
+    width: 1000px;
+    height: 1000px;
+    
+}

@@ -1,127 +1,73 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scanner de Partículas</title>
-  <!-- Inclua o arquivo particles.min.js localmente -->
-  <script src="./src/JS/"></script>
-  <style>
-    body {
-      margin: 0;
-      overflow: hidden;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/brakePoints.css">
+
+    <script  src="./src/JS/fire.js"></script>
+    <script  src="./src/JS/buttonFunc.js"></script>
+    <script src="./src/JS/hiddenCharacters.js"></script>
+    <script src="./src/JS/particles.js-master/particles.min.js"></script>
+ 
+    <title>
+        Pixel Dungeons Charters 
+    </title>
 </head>
-<body>
 
-<!-- Container para as partículas -->
-<div id="particles-bg"></div>
+    <body class="fundo" >
+        
 
-<script>
-  // Configuração do scanner de partículas
-  particlesJS('particles-bg', {
-    particles: {
-      number: {
-        value: 100,
-        density: {
-          enable: true,
-          value_area: 800
-        }
-      },
-      color: {
-        value: '#ff9900'
-      },
-      shape: {
-        type: 'circle',
-        stroke: {
-          width: 0,
-          color: '#000000'
-        },
-        polygon: {
-          nb_sides: 5
-        }
-      },
-      opacity: {
-        value: 0.5,
-        random: false,
-        anim: {
-          enable: false,
-          speed: 1,
-          opacity_min: 0.1,
-          sync: false
-        }
-      },
-      size: {
-        value: 5,
-        random: true,
-        anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
-          sync: false
-        }
-      },
-      line_linked: {
-        enable: false
-      },
-      move: {
-        enable: true,
-        direction: 'top', // Configura a direção do movimento
-        speed: 6,
-        random: false,
-        straight: false,
-        out_mode: 'out',
-        bounce: false,
-        attract: {
-          enable: false,
-          rotateX: 600,
-          rotateY: 1200
-        }
-      }
-    },
-    interactivity: {
-      detect_on: 'canvas',
-      events: {
-        onhover: {
-          enable: true,
-          mode: 'grab'
-        },
-        onclick: {
-          enable: true,
-          mode: 'push'
-        },
-        resize: true
-      },
-      modes: {
-        grab: {
-          distance: 140,
-          line_linked: {
-            opacity: 1
-          }
-        },
-        bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
-          opacity: 8,
-          speed: 3
-        },
-        repulse: {
-          distance: 200,
-          duration: 0.4
-        },
-        push: {
-          particles_nb: 4
-        },
-        remove: {
-          particles_nb: 2
-        }
-      }
-    },
-    retina_detect: true
-  });
-</script>
+        <header class="header">
+            <nav class="nav">
+                <a href="/" class="logo" ><img class="logo" src="./src/css/assets/unnamed.png"></a>
+                <div class="mobileMenu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
 
-</body>
+                </div>
+                <ul class="navList">
+                    <li><a href="#"><img class="logo navLinkFade" id ="bT" src="./src/css/assets/Warrior.webp"></a></li>
+                    <li><a href="#"><img class="logo navLinkFade" id ="bT" src="./src/css/assets/Mage.webp"></a></li>
+                    <li><a href="#"><img class="logo navLinkFade" id ="bT" src="./src/css/assets/Rogue.webp"></a></li>
+                    <li><a href="#"><img class="logo navLinkFade" id ="bT" src="./src/css/assets/Huntress.webp"></a></li>
+                    <li><a href="#"><img class="logo navLinkFade" id ="bT" src="./src/css/assets/Shattered-duelist.webp"></a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+
+        <div class="form">
+            <div class="paperRoll">
+                <div id="particles-bg"></div>
+                <script src="./src/JS/particle.js"></script>
+                <div class="rowText"></div>
+                <div class="rowImg">
+                    
+                    <img class="fullBody onIndex" src="./src/css/assets/warriofullbody.png">
+                    <img class="fullBody" src="./src/css/assets/magefullbody.png">
+                    <img class="fullBody" src="./src/css/assets/roguefullbody.png">
+                    <img class="fullBody" src="./src/css/assets/huntressfullbody.png">
+                    <img class="fullBody" src="./src/css/assets/duelistfullbody.png"> 
+                    
+                    
+                </div>
+            </div>
+            <div class="up"></div>
+            <div class="pipe l"></div>
+            <div class="low"></div>
+            <div class="pipe u"></div>
+        </div>
+        
+        
+
+        <main class="hero"></main>
+        <div class="maps"></div>
+        <div class="fireContent" id="fireContent"></div>
+    </body>
 </html>
