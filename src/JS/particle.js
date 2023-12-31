@@ -1,43 +1,45 @@
  // Configuração do scanner de partículas
+ 
  particlesJS('particles-bg', {
     particles: {
       number: {
-        value: 800,
+        value: 10,
         density: {
           enable: true,
-          value_area: 1000
+          value_area: 10
         }
       },
       color: {
         value: '#ff9900'
       },
       shape: {
-        type: 'circle',
-        stroke: {
-          width: 0,
-          color: '#000000'
+        type: 'image',
+        image: {
+          src: './src/CSS/assets/sPFire.png', // URL da imagem
+          width: 500, // Largura da imagem
+          height: 500, // Altura da imagem
         },
         polygon: {
-          nb_sides: 10
+          nb_sides: 1000
         }
       },
       opacity: {
-        value: 1,
+        value: 1,  // Opacidade inicial
         random: true,
         anim: {
-          enable: false,
-          speed: 100,
-          opacity_min: 0.1,
+          enable: true,
+          speed: 1,  // Velocidade da animação
+          opacity_min: 0,  // Opacidade mínima ao longo do percurso
           sync: false
         }
       },
       size: {
-        value: 10,
+        value:350,
         random: true,
         anim: {
-          enable: false,
-          speed: 40,
-          size_min: 0.1,
+          enable: true,
+          speed: 10,
+          size_min: 200,
           sync: false
         }
       },
@@ -47,13 +49,13 @@
       move: {
         enable: true,
         direction: 'top', // Configura a direção do movimento
-        speed: 25,
-        random: false,
+        speed: 20,
+        random: true,
         straight: false,
         out_mode: 'out',
         bounce: false,
         attract: {
-          enable: false,
+          enable: true,
           rotateX: 600,
           rotateY: 1200
         }
@@ -74,29 +76,29 @@
       },
       modes: {
         grab: {
-          distance: 140,
+          distance: 1,
           line_linked: {
             opacity: 1
           }
         },
         bubble: {
-          distance: 400,
-          size: 40,
-          duration: 2,
+          distance: 4,
+          size: 4,
+          duration: 1,
           opacity: 8,
-          speed: 3
+          speed: 10
         },
         repulse: {
-          distance: 200,
-          duration: 0.4
+          distance: 1,
+          duration: 0.01
         },
         push: {
-          particles_nb: 4
+          particles_nb: 30
         },
         remove: {
-          particles_nb: 2
+          particles_nb: 10000
         }
       }
     },
-    retina_detect: true
+    retina_detect: false
   });
