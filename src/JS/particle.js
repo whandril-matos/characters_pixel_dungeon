@@ -1,12 +1,11 @@
- // Configuração do scanner de partículas
- 
+
  particlesJS('particles-bg', {
     particles: {
       number: {
         value: 10,
         density: {
           enable: true,
-          value_area: 10
+          value_area: 100
         }
       },
       color: {
@@ -20,7 +19,7 @@
           height: 500, // Altura da imagem
         },
         polygon: {
-          nb_sides: 1000
+          nb_sides: 1
         }
       },
       opacity: {
@@ -47,6 +46,7 @@
         enable: false
       },
       move: {
+        out_mode: 'bounce',
         enable: true,
         direction: 'top', // Configura a direção do movimento
         speed: 20,
@@ -56,8 +56,8 @@
         bounce: false,
         attract: {
           enable: true,
-          rotateX: 600,
-          rotateY: 1200
+          rotateX: 100,
+          rotateY: 12
         }
       }
     },
@@ -65,11 +65,11 @@
       detect_on: 'canvas',
       events: {
         onhover: {
-          enable: true,
+          enable: false,
           mode: 'grab'
         },
         onclick: {
-          enable: true,
+          enable: false,
           mode: 'push'
         },
         resize: true
@@ -96,9 +96,10 @@
           particles_nb: 30
         },
         remove: {
-          particles_nb: 10000
+          particles_nb: 1
         }
       }
     },
     retina_detect: false
   });
+  

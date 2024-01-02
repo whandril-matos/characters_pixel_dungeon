@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function (){
       constructor() {
           this.bT = document.querySelectorAll(".navLinkFade")
           this.bD = document.querySelectorAll(".fullBody")
+          this.text = document.tag 
         }
     
         adicionarOuvintes() {
