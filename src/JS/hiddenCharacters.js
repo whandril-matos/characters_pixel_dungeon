@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function (){
       constructor() {
           this.bT = document.querySelectorAll(".navLinkFade")
           this.bD = document.querySelectorAll(".fullBody")
-          this.text = document.tag 
+          this.text = document.querySelector(".rowText")
+          this.imgC = document.querySelector(".rowImg")
         }
     
         adicionarOuvintes() {
@@ -13,6 +14,10 @@ document.addEventListener("DOMContentLoaded", function (){
             imagem.addEventListener('click', () => {
               this.bodyInIdex(indice);
               this.ImgCop(indice);
+              this.scope();
+              
+              
+              
 
             });
           });
@@ -20,12 +25,22 @@ document.addEventListener("DOMContentLoaded", function (){
         
         ImgCop(indice){
           this.bD[indice].classList.add("onIndex")
+          this.text.classList.add("onIndex")
+          this.imgC.classList.add("onIndex")
 
         }
 
         bodyInIdex(indice) {
-          this.onIndex = document.querySelector('.onIndex');
-          this.onIndex.classList.remove('onIndex');
+          this.onIndex = document.querySelectorAll('.onIndex');
+          this.onIndex.forEach((elemento) => {
+            elemento.classList.remove("onIndex");
+          });
+          
+         
+        }
+
+        scope(){
+          
         }
     }
   
