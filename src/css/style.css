@@ -193,18 +193,15 @@ tr td {
     /* background: linear-gradient(to left, rgba(250, 235, 215, 0), rgb(250, 235, 215)50px, rgb(250, 235, 215)); */
     background:rgb(250, 235, 215);
     z-index: 1;
-    opacity: 1;
     display: none;
 }
 .rowImg{
     background:#111111;
     width:40%;
     height: 100%;
-    
     flex-direction: column;
     align-items: center;
     align-content: center;
-    opacity: 1;
     display: none;
   
 }
@@ -220,7 +217,7 @@ tr td {
 .onIndex{
     display: flex;
     opacity: 1;
-    animation: fadeIn 3s ease-in-out ;
+    animation: fadeIn 3s  ;
    
     
     

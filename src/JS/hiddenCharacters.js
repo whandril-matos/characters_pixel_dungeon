@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function (){
             imagem.addEventListener('click', () => {
               this.bodyInIdex(indice);
               this.ImgCop(indice);
-              this.scope();
+              
               
               
               
@@ -27,21 +27,28 @@ document.addEventListener("DOMContentLoaded", function (){
           this.bD[indice].classList.add("onIndex")
           this.text.classList.add("onIndex")
           this.imgC.classList.add("onIndex")
-
+          
         }
 
         bodyInIdex(indice) {
           this.onIndex = document.querySelectorAll('.onIndex');
+          
+          this.onIndex.forEach((elemento) => {
+            console.log(elemento)
+            elemento.classList.remove("onIndex");
+            console.log(elemento)
+            
+          });
+ 
+        }
+        b1B2() {
+          this.onIndex = document.querySelectorAll('.onIndex');
           this.onIndex.forEach((elemento) => {
             elemento.classList.remove("onIndex");
           });
-          
-         
+ 
         }
 
-        scope(){
-          
-        }
     }
   
   //Creates an instance of the class
