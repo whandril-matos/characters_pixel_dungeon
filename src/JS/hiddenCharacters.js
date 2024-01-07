@@ -48,40 +48,81 @@ document.addEventListener("DOMContentLoaded", function (){
   // // Call the method of the class 
   // pessoa1.adicionarOuvintes(); 
   
+  // const bT = document.querySelectorAll(".navLinkFade")
+  // const bD = document.querySelectorAll(".fullBody")
+  // const text = document.querySelector(".rowText")
+  // const imgC = document.querySelector(".rowImg")
+ 
+  // function adicionarOuvintes() {
+  //   bT.forEach((imagem, indice) => {
+  //     imagem.addEventListener('click', () => {
+  //       bodyInIdex(indice);
+  //       ImgCop(indice);
+
+  //     });
+  //   });
+  // }
+  // function ImgCop(indice){
+  //   text.classList.add("onIndex")
+  //   imgC.classList.add("onIndex")
+  //   bD[indice].classList.add("onIndex")
+    
+      
+  // }
+  // function bodyInIdex() {
+  //   let onIndex = document.querySelectorAll('.onIndex');
+  //   onIndex.forEach((elemento) => {
+  //     elemento.classList.remove("onIndex");
+      
+  //   });
+    
+  //   console.log(onIndex)
+  // }
+  // function main(){
+  //   bodyInIdex()
+  //   adicionarOuvintes()
+  // }
+  // main()
+
   const bT = document.querySelectorAll(".navLinkFade")
   const bD = document.querySelectorAll(".fullBody")
   const text = document.querySelector(".rowText")
   const imgC = document.querySelector(".rowImg")
  
   function adicionarOuvintes() {
-    bT.forEach((imagem, indice) => {
-      imagem.addEventListener('click', () => {
-        bodyInIdex(indice);
-        ImgCop(indice);
-
+      bT.forEach((imagem, indice) => {
+        imagem.addEventListener('click', () => {
+          bodyInIdex()
+         add(indice) 
+          
+        });
       });
-    });
   }
-  function ImgCop(indice){
-    text.classList.add("onIndex")
-    imgC.classList.add("onIndex")
+
+  function bodyInIdex() {
+      let onIndex = document.querySelectorAll('.onIndex');
+      onIndex.forEach((elemento) => {
+        elemento.classList.remove("onIndex");
+        text.classList.toggle("onIndex")
+        imgC.classList.toggle("onIndex")
+      });
+    }
+  function add(indice){
     bD[indice].classList.add("onIndex")
     
-      
+
   }
-  function bodyInIdex() {
-    let onIndex = document.querySelectorAll('.onIndex');
-    onIndex.forEach((elemento) => {
-      elemento.classList.remove("onIndex");
+  
+  function pInterval (){
+    let i = 0
+    while (i <= 2){
       
-    });
+      i++
+
+    }
     
-    console.log(onIndex)
   }
-  function main(){
-    bodyInIdex()
-    adicionarOuvintes()
-  }
-  main()
+
+  adicionarOuvintes()
 
 })

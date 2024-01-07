@@ -214,13 +214,13 @@ tr td {
     
 
 }
+
+
 .onIndex{
     display: flex;
     opacity: 1;
     animation: fadeIn 3s;
-   
-    
-    
+      
 }
 
 @keyframes fadeIn {
