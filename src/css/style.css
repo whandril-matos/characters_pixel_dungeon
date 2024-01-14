@@ -109,11 +109,11 @@ tr td {
 
     display: flex;
     position:absolute;
-    background-color:antiquewhite;
+    background-color:#111111;
     border-radius: 10px;
     width: calc(100% - 30px) ;
     left: 120%; 
-    transform: translate(-120%, 0%);
+    transform: translate(-121.1%, 0%);
     height: 100%;
     border: solid rgb(172, 150, 120) 10px;
     border-radius: 3px;
@@ -190,10 +190,10 @@ tr td {
 .rowText{
     width:60%;
     height: 100%;
-    /* background: linear-gradient(to left, rgba(250, 235, 215, 0), rgb(250, 235, 215)50px, rgb(250, 235, 215)); */
-    background:#111111;
+    background: linear-gradient(to left, rgba(250, 235, 215, 0), #111111 50px, #111111); 
+    
     z-index: 1;
-    display: none;
+    display: flex;
 }
 .rowImg{
     background:#111111;
@@ -202,7 +202,7 @@ tr td {
     flex-direction: column;
     align-items: center;
     align-content: center;
-    display: none;
+    display: flex;
   
 }
 
