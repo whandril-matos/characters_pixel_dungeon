@@ -72,7 +72,7 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   const bt = document.querySelectorAll('.navLinkFade');
-  const inSquare = document.querySelectorAll('.inBL');
+  const txt = document.querySelectorAll('.txt');
   const fullBody = document.querySelectorAll('.fullBody');
 
   bt.forEach((inBt, indice) => {
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function showBackGround(indice){
-    inSquare[indice].classList.add('onIndex');
+    txt[indice].classList.add('onIndex');
   }
 
   function hiddenHero(){

@@ -191,10 +191,31 @@ tr td {
     width:60%;
     height: 100%;
     background: linear-gradient(to left, rgba(250, 235, 215, 0), #111111 50px, #111111); 
-    
     z-index: 1;
     display: flex;
 }
+
+@font-face {
+    font-family: 'pXFont';
+    src: url('./fonts/pixel_font.ttf') format('woff'), /* formato da fonte, ajuste conforme necessário */
+         url('./fonts/pixel_font.ttff') format('truetype'); /* formato da fonte, ajuste conforme necessário */
+    font-weight: normal; /* ou bold, conforme necessário */
+    font-style: normal; /* ou italic, conforme necessário */
+}
+
+
+.txt{
+    color: rgb(250, 235, 215) ;
+    display: none;
+    align-items: center;
+    filter:sepia(100%);
+    padding: 5%;
+    justify-content: center; /* alinhamento horizontal no centro */
+    font-family: 'pXFont', sans-serif; /* Use o nome definido no @font-face */
+    
+    
+}
+
 .rowImg{
     background:#111111;
     width:40%;
@@ -217,15 +238,17 @@ tr td {
 .atc{
     display: flex;
     opacity: 1;
-      
+    animation: fadeIn 4s;
 }
 
 .onIndex{
     display: flex;
     opacity: 1;
-    animation: fadeIn 3s;
+    animation: fadeIn 5s;
       
 }
+
+
 
 @keyframes fadeIn {
     from{
