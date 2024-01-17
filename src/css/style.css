@@ -212,8 +212,7 @@ tr td {
     padding: 5%;
     justify-content: center; /* alinhamento horizontal no centro */
     font-family: 'pXFont', sans-serif; /* Use o nome definido no @font-face */
-    
-    
+    font-size: 20px;  
 }
 
 .rowImg{

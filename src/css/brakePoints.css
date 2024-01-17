@@ -29,7 +29,13 @@
         width: 45px;
         height: 47px;
     }
-    
+    .txt{
+        font-size: 15px; 
+    }
+    .form{
+        width: 90%;
+        min-width: 400px;  
+    }
 }
 
 @keyframes navLinkFade{
@@ -45,10 +51,7 @@
 
 
 @media (max-height:550px){
-    .form{
-        top:60%;
-        min-width: 400px;  
-    }
+    
 
 }
 
