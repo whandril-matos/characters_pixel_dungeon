@@ -205,14 +205,22 @@ tr td {
 
 
 .txt{
-    color: rgb(250, 235, 215) ;
     display: none;
     align-items: center;
     filter:sepia(100%);
     padding: 5%;
-    justify-content: center; /* alinhamento horizontal no centro */
+    font-size: 20px; 
+    
+}
+
+.contentText{
+    color: rgb(250, 235, 215) ;
+    
+    filter:sepia(100%);
+    padding: 5%;
+    display: block;
     font-family: 'pXFont', sans-serif; /* Use o nome definido no @font-face */
-    font-size: 20px;  
+    font-size: 20px; 
 }
 
 .rowImg{
@@ -235,7 +243,8 @@ tr td {
 
 }
 .atc{
-    display: flex;
+    display:block;
+    
     opacity: 1;
     animation: fadeIn 4s;
 }
