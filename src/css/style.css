@@ -9,7 +9,7 @@ a {
     margin: 30px 10px 10px 10px;
     background-image: url('./assets/rat.png');
     border-radius: 10px;
-    position: fixed;
+    position:absolute;
     width: calc(95% - 20px) ;
     z-index: 100;
     
@@ -78,9 +78,8 @@ tr td {
     width: 200px;
     height: 200px;
     top: 50%;
-    
     transform: translate(-50%, -50%);
-    position:fixed;
+    position:absolute;
     background-size:contain;
     background-repeat: no-repeat;
     background-position:center ;
@@ -206,18 +205,21 @@ tr td {
 
 .txt{
     display: none;
-    align-items: center;
-    filter:sepia(100%);
-    padding: 5%;
-    font-size: 20px; 
     
+    flex-direction:column ;
+    width: 100%;
+    height:100%;
+    padding-top: 30%;
+    font-size: 20px; 
+    background-color: aqua;
 }
 
 .contentText{
     color: rgb(250, 235, 215) ;
     
     filter:sepia(100%);
-    padding: 5%;
+    margin-left: 5%;
+    margin-bottom: 5%;
     display: block;
     font-family: 'pXFont', sans-serif; /* Use o nome definido no @font-face */
     font-size: 20px; 
