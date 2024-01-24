@@ -30,7 +30,8 @@
         height: 47px;
     }
     .txt{
-        font-size: 15px; 
+        font-size: 15px;
+        padding-top: 60%; 
     }
     .form{
         width: 90%;
@@ -52,7 +53,10 @@
 
 
 @media (max-height:550px){
-    
+
+    body{
+        zoom: 0.50;
+    }
 
 }
 

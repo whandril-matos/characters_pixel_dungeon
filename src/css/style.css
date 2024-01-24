@@ -205,18 +205,16 @@ tr td {
 
 .txt{
     display: none;
-    
-    flex-direction:column ;
-    width: 100%;
-    height:100%;
-    padding-top: 30%;
-    font-size: 20px; 
+    flex-direction:column;
+
+    font-size: 100vh;
+    padding-top: 80px;
+    padding-bottom: 70px;
     background-color: aqua;
 }
 
 .contentText{
-    color: rgb(250, 235, 215) ;
-    
+    color: rgb(250, 235, 215) ; 
     filter:sepia(100%);
     margin-left: 5%;
     margin-bottom: 5%;
