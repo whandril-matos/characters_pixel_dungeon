@@ -1,4 +1,4 @@
-@media (max-width: 550px)  {
+@media (max-width: 575px)  {
     .navList{
         transform: translateY(-160%);
         margin-left: 60vh;
@@ -52,10 +52,14 @@
 
 
 
-@media (max-height:550px){
-
-    body{
-        zoom: 0.50;
+@media (max-height:480px){
+    .contentText{
+        
+        font-size: 100%;
+    }
+    .txt{
+        padding-top: 7vh;
+        padding-bottom: 70px;
     }
 
 }

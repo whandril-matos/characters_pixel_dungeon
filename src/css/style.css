@@ -207,7 +207,7 @@ tr td {
     display: none;
     flex-direction:column;
 
-    font-size: 100vh;
+    
     padding-top: 80px;
     padding-bottom: 70px;
     background-color: aqua;
@@ -220,7 +220,7 @@ tr td {
     margin-bottom: 5%;
     display: block;
     font-family: 'pXFont', sans-serif; /* Use o nome definido no @font-face */
-    font-size: 20px; 
+    font-size: 100%;
 }
 
 .rowImg{
