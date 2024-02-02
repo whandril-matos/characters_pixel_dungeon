@@ -52,14 +52,15 @@
 
 
 
-@media (max-height:480px){
+@media (max-height:600px){
     .contentText{
+        font-size: 18px;
         
-        font-size: 100%;
     }
     .txt{
-        padding-top: 7vh;
+        padding-top: 15vh;
         padding-bottom: 70px;
+        
     }
 
 }
